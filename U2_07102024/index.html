@@ -1,41 +1,41 @@
-<!DOCTYPE html>
-<html lang="es">
+<!DOCTYPE html> 
+<html lang="es"> <!-- Establece el idioma de la página como español -->
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Sencilla</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8"> <!-- Define la codificación de caracteres como UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura la vista para dispositivos móviles -->
+    <title>Calculadora Sencilla</title> <!-- Título de la página que se muestra en la pestaña del navegador -->
+    <link rel="stylesheet" href="styles.css"> <!-- Enlaza el archivo CSS para estilos -->
 </head>
 <body>
-    <div class="calculator">
-        <input type="text" id="display" class="calculator-screen" value="" disabled>
+    <div class="calculator"> <!-- Contenedor principal de la calculadora -->
+        <input type="text" id="display" class="calculator-screen" value="" disabled> <!-- Pantalla de la calculadora, deshabilitada para entrada directa -->
 
-        <div class="calculator-buttons">
-            <button class="button" onclick="clearDisplay()">C</button>
-            <button class="button" onclick="deleteLast()">DEL</button>
-            <button class="button" onclick="appendToDisplay('/')">/</button>
-            <button class="button" onclick="appendToDisplay('*')">*</button>
+        <div class="calculator-buttons"> <!-- Contenedor para los botones de la calculadora -->
+            <button class="button" onclick="clearDisplay()">C</button> <!-- Botón para limpiar la pantalla -->
+            <button class="button" onclick="deleteLast()">DEL</button> <!-- Botón para borrar el último carácter ingresado -->
+            <button class="button" onclick="appendToDisplay('/')">/</button> <!-- El botón para agregar la operación de división -->
+            <button class="button" onclick="appendToDisplay('*')">*</button> <!-- El botón para agregar la operación de multiplicación -->
 
-            <button class="button" onclick="appendToDisplay('7')">7</button>
-            <button class="button" onclick="appendToDisplay('8')">8</button>
-            <button class="button" onclick="appendToDisplay('9')">9</button>
-            <button class="button" onclick="appendToDisplay('-')">-</button>
+            <button class="button" onclick="appendToDisplay('7')">7</button> <!-- El botón para el número 7 -->
+            <button class="button" onclick="appendToDisplay('8')">8</button> <!-- El botón para el número 8 -->
+            <button class="button" onclick="appendToDisplay('9')">9</button> <!-- El botón para el número 9 -->
+            <button class="button" onclick="appendToDisplay('-')">-</button> <!-- El botón para agregar la operación de resta -->
 
-            <button class="button" onclick="appendToDisplay('4')">4</button>
-            <button class="button" onclick="appendToDisplay('5')">5</button>
-            <button class="button" onclick="appendToDisplay('6')">6</button>
-            <button class="button" onclick="appendToDisplay('+')">+</button>  
+            <button class="button" onclick="appendToDisplay('4')">4</button> <!-- El botón para el número 4 -->
+            <button class="button" onclick="appendToDisplay('5')">5</button> <!-- El botón para el número 5 -->
+            <button class="button" onclick="appendToDisplay('6')">6</button> <!-- El botón para el número 6 -->
+            <button class="button" onclick="appendToDisplay('+')">+</button> <!-- El botón para agregar la operación de suma -->
 
-            <button class="button" onclick="appendToDisplay('1')">1</button>
-            <button class="button" onclick="appendToDisplay('2')">2</button>
-            <button class="button" onclick="appendToDisplay('3')">3</button>
-            <button class="button equal-button" onclick="calculateResult()">=</button>
+            <button class="button" onclick="appendToDisplay('1')">1</button> <!-- El botón para el número 1 -->
+            <button class="button" onclick="appendToDisplay('2')">2</button> <!-- El botón para el número 2 -->
+            <button class="button" onclick="appendToDisplay('3')">3</button> <!-- El botón para el número 3 -->
+            <button class="button equal-button" onclick="calculateResult()">=</button> <!-- Botón para calcular el resultado -->
 
-            <button class="button" onclick="appendToDisplay('0')">0</button>
-            <button class="button" onclick="appendToDisplay('.')">.</button>
+            <button class="button" onclick="appendToDisplay('0')">0</button> <!-- El botón para el número 0 -->
+            <button class="button" onclick="appendToDisplay('.')">.</button> <!-- El botón para el punto decimal -->
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- Este es el que enlaza el archivo JavaScript para la funcionalidad de la calculadora -->
 </body>
 </html>
