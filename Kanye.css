@@ -1,0 +1,79 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #FF8A00, #E74C3C);
+    color: #fff;
+}
+
+header {
+    background: linear-gradient(to right, #FF6B6B, #4ECDC4);
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.album {
+    margin-bottom: 40px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.album img {
+    max-width: 200px;
+    float: left;
+    margin-right: 20px;
+    border-radius: 5px;
+}
+
+.album::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.album-1 {
+    background: linear-gradient(45deg, #FFA500, #FF6347);
+}
+
+.album-2 {
+    background: linear-gradient(45deg, #800080, #4B0082);
+}
+
+.album-3 {
+    background: linear-gradient(45deg, #FF69B4, #FF1493);
+}
+
+.album-4 {
+    background: linear-gradient(45deg, #FF0000, #8B0000);
+}
+
+.btn {
+    display: inline-block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background: linear-gradient(45deg, #FFA500, #FF6347);
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.btn:hover {
+    background-color: #FF3B3B;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+}
